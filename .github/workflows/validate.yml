@@ -1,0 +1,19 @@
+name: Validate The Master Tape
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ["2.6", "3.3"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+      - run: ruby scripts/validate.rb
+      - run: ruby scripts/resolve_context.rb "Example Project"

@@ -1,0 +1,36 @@
+registry_version: 1
+updated_at: 2026-10-28
+information:
+  - id: system:architecture
+    type: system
+    title: The Master Tape Architecture
+    lifecycle_status: active
+    canonical_path: System/ARCHITECTURE.md
+    aliases:
+      - Architecture
+  - id: system:ai-entry-point
+    type: system
+    title: AI Entry Point
+    lifecycle_status: active
+    canonical_path: System/AI_ENTRY_POINT.md
+    aliases:
+      - Entry Point
+  - id: project:example
+    type: project
+    title: Example Project
+    lifecycle_status: active
+    canonical_path: Examples/example-project.md
+    aliases:
+      - Demo Project
+  - id: decision:example:canonical-memory
+    type: decision
+    title: Use Git-versioned files as canonical memory
+    lifecycle_status: active
+    canonical_path: Examples/example-decision.md
+    aliases: []
+  - id: knowledge:minimum-sufficient-context
+    type: knowledge
+    title: Minimum Sufficient Context
+    lifecycle_status: active
+    canonical_path: Examples/minimum-sufficient-context.md
+    aliases: []

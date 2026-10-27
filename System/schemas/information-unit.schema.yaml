@@ -1,0 +1,10 @@
+schema_version: 1
+required: [id, type, title, lifecycle_status, revision, created_at, updated_at, authority, confidence, sensitivity]
+allowed_types: [project, decision, research, knowledge, entity, source, system]
+allowed_lifecycle_statuses: [active, contested, archived]
+allowed_authority_domains: [user_intent, system_rules, project_governance, external_facts, analytical_judgment]
+allowed_authority_levels: [canonical, derived, reference]
+allowed_confidence: [confirmed, supported, inferred, hypothesis, unknown]
+allowed_sensitivity: [public, internal]
+allowed_relationships: [belongs_to, relates_to, depends_on, informed_by, implements, supersedes, contradicts, derived_from, applies_to, owned_by]
+project_operational_statuses: [planned, active, paused, completed, cancelled]
