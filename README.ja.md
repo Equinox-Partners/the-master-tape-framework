@@ -17,12 +17,18 @@ The Master Tapeでは、情報を7種類に分け、安定ID、Authority、Confi
 
 Ruby 2.6以上とGitが必要です。追加gemは不要です。
 
+最も簡単な方法は、GitHubの **Use this template** を押し、自分の記憶用Privateリポジトリを作成して、そのフォルダをCodexまたはClaude Codeで開く方法です。
+
 ```bash
+git clone https://github.com/Equinox-Partners/the-master-tape-framework.git
+cd the-master-tape-framework
 ruby scripts/validate.rb
 ruby scripts/resolve_context.rb "Example Project"
 ```
 
 新しい情報を追加する場合は、`Templates/`から該当型をコピーし、`System/REGISTRY.yaml`へ登録してからvalidatorを実行します。
+
+実際の個人・業務情報を入れるリポジトリは、全情報を公開してよい場合を除きPrivateにしてください。
 
 詳細は[英語README](README.md)と[AI Entry Point](System/AI_ENTRY_POINT.md)を参照してください。
 

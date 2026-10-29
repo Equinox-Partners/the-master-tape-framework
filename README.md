@@ -38,9 +38,11 @@ The framework uses seven information types: `project`, `decision`, `research`, `
 
 Requirements: Git and Ruby 2.6 or newer. No gems are required.
 
+The easiest path is to click **Use this template** on GitHub, create a private repository for your own memory, and open the cloned folder in Codex or Claude Code.
+
 ```bash
-git clone https://github.com/YOUR-ACCOUNT/the-master-tape.git
-cd the-master-tape
+git clone https://github.com/Equinox-Partners/the-master-tape-framework.git
+cd the-master-tape-framework
 ruby scripts/validate.rb
 ruby scripts/resolve_context.rb "Example Project"
 ```
@@ -57,6 +59,8 @@ Then:
 2. Give it a stable ID and add it to `System/REGISTRY.yaml`.
 3. Point your AI tool to `AGENTS.md` or `System/AI_ENTRY_POINT.md`.
 4. Run `ruby scripts/validate.rb` before committing.
+
+For a real workspace, keep the generated repository private unless every stored document is safe to publish.
 
 ## Repository map
 
